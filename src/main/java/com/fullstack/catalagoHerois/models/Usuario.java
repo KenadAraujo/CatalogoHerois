@@ -1,5 +1,6 @@
 package com.fullstack.catalagoHerois.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -23,6 +24,7 @@ public class Usuario {
     @Column(name = "login")
     private String login;
     
+    @JsonIgnore
     @Column(name = "senha")
     private String senha;
 
