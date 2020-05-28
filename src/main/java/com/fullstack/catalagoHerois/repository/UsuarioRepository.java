@@ -5,10 +5,11 @@
  */
 package com.fullstack.catalagoHerois.repository;
 
-import com.fullstack.catalagoHerois.models.Heroi;
+import com.fullstack.catalagoHerois.models.Usuario;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface HeroiRepository extends PagingAndSortingRepository<Heroi, Long>{
+
+public interface UsuarioRepository extends PagingAndSortingRepository<Usuario, Long>{
     
-    Heroi findByIdentidadeSecreta(String identidadeSecreta);
+    Usuario findByLogin(String login);
 }
